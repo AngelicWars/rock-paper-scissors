@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+    <h1>Welcome to Rock, Paper, Scissors!</h1>
+    <h2>To get started choose rock, paper, or scissors in the boxes below.</h2>
+    <div class="grid">
+        <h2>Player</h2>
+        <h2>Computer</h2>
+        <div class="box flex">
+            <img src="" alt="placeholder" class="image hidden" id="player"/>
+        </div>
+        <div class="box flex">
+            <img src="" alt="placeholder" class="image hidden" id="computer"/>
+        </div>
+    </div>
+    <div class="flex gap">
+        <div class="flex adjust">
+            <button onclick="getValue('rock');" class="size center"><img alt="rock" src="imgs/rock.png" class="icons column"/>Rock</button>
+            <button onclick="getValue('paper');" class="size center"><img alt="paper" src="imgs/paper.png" class="icons column"/>Paper</button>
+            <button onclick="getValue('scissors');" class="size center"><img alt="scissors " src="imgs/scissors.png" class="icons column"/>Scissors</button>
+        </div>
+    </div>
+    <div id="prompt" class="font"></div>
+    <script type="text/javascript" src="js.js"></script>
+</body>
+</html>
